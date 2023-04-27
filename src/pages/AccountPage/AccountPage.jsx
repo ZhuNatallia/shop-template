@@ -10,7 +10,6 @@ const AccountPage = () => {
             <Breadcrumbs  />
             <div className={styles.wrapper}>
                 <LoginForm styles={styles} />
-
                 <RegisterForm styles={styles} />
             </div>
         </div>

@@ -1,34 +1,22 @@
 import React from "react";
+import TextField from '@mui/material/TextField';
 
 const RegisterForm = ({ styles }) => {
   return (
-    <form className={styles.form}>
-      <h2 className={styles.title}>Register</h2>
-      <div className={styles.control}>
-        <label htmlFor="email" className={styles.label}>
-          Email address
-        </label>
-        <input
-          type="email"
-          placeholder="email"
-          name="email"
-          className={styles.input}
-        />
-      </div>
-      <div className={styles.control}>
-        <label htmlFor="password" className={styles.label}>
-          Password
-        </label>
-        <input
-          type="passworld"
-          placeholder="pass"
-          name="password"
-          className={styles.input}
-        />
-      </div>
-      <input type="submit" value="Register" className={styles.submit} />
-    </form>
-  );
+		<form className={styles.form}>
+			<h2 className={styles.title}>Register</h2>
+			<div className={styles.control}>
+				{/* <label htmlFor='email' className={styles.label}>
+					Email address
+				</label> */}
+				<TextField label='Email' variant='outlined' />
+			</div>
+			<div className={styles.control}>
+				<TextField label='Password' variant='outlined' />
+			</div>
+			<input type='submit' value='Register' className={styles.submit} />
+		</form>
+	);
 };
 
 export default RegisterForm;
